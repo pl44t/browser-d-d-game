@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeons and Dragons Style Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="visuals">
+            <img id="action-visual" src="images/idle.webp" alt="Character action">
+        </div>
+        <div id="game-content">
+            <h1>Dungeons and Dragons Style Game</h1>
+            <div id="stats">
+                <div>Health: <div id="health-bar"><div id="health-bar-fill"></div></div></div>
+                <div>XP: <div id="xp-bar"><div id="xp-bar-fill"></div></div> <span id="xp-text">0 / 100 XP</span></div>
+                <div>Currency: <span id="currency">0</span> gold</div>
+            </div>
+            <div id="inventory">Inventory: <span id="inventory-items">None</span></div>
+            <div id="equipment">Equipment: <span id="equipment-items">None</span></div>
+            <div id="game-log"></div>
+            <button onclick="goToTown()">Go to Town</button>
+            <button onclick="explore()">Explore</button>
+            <button onclick="enterDungeon()">Enter Dungeon</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
